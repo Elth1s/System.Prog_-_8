@@ -5,6 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System.Prog_Дз_8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <DockPanel></DockPanel>
+        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
+    <DockPanel x:Name="dockPanel">
+        <Menu x:Name="mainMenu">
+            <MenuItem Header="Themes">
+                <MenuItem x:Name="BlackThemeMenuItem" Header="Black" Click="BlackThemeMenuItem_Click"></MenuItem>
+                <MenuItem x:Name="WhiteThemeMenuItem" Header="White" Click="WhiteThemeMenuItem_Click"></MenuItem>
+                <MenuItem x:Name="SystemThemeMenuItem" Header="System" Click="SystemThemeMenuItem_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="FontSize">
+                <MenuItem x:Name="Size8MenuItem" Header="8" Click="Size8MenuItem_Click"></MenuItem>
+                <MenuItem x:Name="Size14MenuItem" Header="14" Click="Size14MenuItem_Click"></MenuItem>
+                <MenuItem x:Name="Size20MenuItem" Header="20" Click="Size20MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </DockPanel>
 </Window>
